@@ -36,7 +36,7 @@ app.use(session({
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.json());
-app.use(cors({origin: true,credentials: true,methods:"GET,POST,PUT,DELETE"}));
+app.use(cors({origin: '*',credentials: true,methods:"GET,POST,PUT,DELETE"}));
 app.use(flash());
 
 app.use(passport.session())
