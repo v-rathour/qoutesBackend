@@ -40,7 +40,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://quotesbackedvikash.onrender.com"],
+    origin: ["http://localhost:3000"],
     credentials: true,
     methods: "GET,POST,PUT,DELETE",
   })
